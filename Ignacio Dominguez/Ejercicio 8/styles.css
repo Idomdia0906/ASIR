@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    background-color: #eeeeee;
+    color: black;
+    text-align: justify;
+}
+
+h1 {
+    color: #333333;
+    font-size: 200%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    background-color: #888888;
+    color: red;
+    font-size: 150%;
+    text-transform: capitalize;
+}
+
+h3 {
+    background-color: #aaaaaa;
+    color: #8b008b;
+    font-size: 130%;
+}
+
+.section {
+    background-color: #cccccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+    padding: 5px;
+}
+
+address {
+    background-color: white;
+    font-style: normal;
+    text-align: right;
+    padding: 5px;
+    margin-top: 20px;
+}

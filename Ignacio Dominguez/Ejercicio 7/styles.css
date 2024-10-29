@@ -1,4 +1,3 @@
-
 body {
     font-family: "Courier New", Courier, monospace;
 }
@@ -21,10 +20,6 @@ h2, h3 {
     border: 1px solid orange;
 }
 
-.segundoH2 {
-    font-size: 16px;
-}
-
 ul > li {
     color: red;
 }
@@ -32,7 +27,6 @@ ul > li {
 ul ul > li {
     color: green;
 }
-
 
 p > img {
     border: 5px solid black;
@@ -42,10 +36,16 @@ img[alt="segunda"] {
     border: 5px solid red;
 }
 
-h3:first-of-type {
+.segundoH3 {
+    background-color: whitesmoke;
+}
+
+/* Aplica un fondo rosa a todos los h3 antes del último h3 */
+h3:not(:last-of-type) {
     background-color: pink;
 }
 
+/* Aplica un fondo azul al último h3 */
 h3:last-of-type {
     background-color: blue;
 }
