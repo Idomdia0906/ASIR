@@ -1,3 +1,4 @@
+/* Estilo general para body */
 body {
     font-family: sans-serif;
     background-color: #eeeeee;
@@ -5,41 +6,69 @@ body {
     text-align: justify;
 }
 
+/* Estilo para H1 */
 h1 {
     color: #333333;
     font-size: 200%;
     text-align: center;
     text-transform: uppercase;
+    background-color: #dddddd;
+    padding: 10px;
 }
 
+/* Estilo para H2 */
 h2 {
     background-color: #888888;
     color: red;
     font-size: 150%;
     text-transform: capitalize;
+    padding: 5px;
+    margin-top: 20px;
 }
 
+/* Estilo para H3 */
 h3 {
     background-color: #aaaaaa;
-    color: #8b008b;
+    color: #8b008b; /* Magenta oscuro */
     font-size: 130%;
+    padding: 5px;
+    margin: 10px 0;
 }
 
+/* Estilo para las secciones (div.section) */
 .section {
     background-color: #cccccc;
     padding: 10px;
     margin-bottom: 10px;
 }
 
+/* Estilo para los párrafos */
 p {
     margin: 0;
     padding: 5px;
+    line-height: 1.5; /* Altura de línea ajustada */
 }
 
+/* Estilo para address */
 address {
     background-color: white;
     font-style: normal;
     text-align: right;
     padding: 5px;
     margin-top: 20px;
+}
+
+/* Estilo para em */
+em {
+    color: blue;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Estilo para strong */
+strong {
+    color: green;
+    font-style: normal;
+    font-weight: normal;
 }
