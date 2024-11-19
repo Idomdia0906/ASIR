@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Sección de Modelos */
+#modelos {
+    padding: 40px 20px;
+    background-color: #dff9fb;
+    text-align: center;
+}
+
+#modelos .grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.card p {
+    padding: 0 10px;
+    color: #555;
+}
+
+/* Sección de Video */
+#videos {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f1f2f6;
+}
+
+/* Sección de Audio */
+#audio {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #dcdde1;
+}
+
+audio {
+    width: 300px;
+}
+
+/* Footer */
+footer {
+    background-color: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-icons img {
+    height: 30px;
+    margin: 0 10px;
+}
+
+footer address {
+    font-style: normal;
+    margin-top: 10px;
+}
+footer address a {
+    color: white; /* Cambia el color del enlace a blanco */
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: bold;
+}
+
+footer address a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+    color: #cccccc; /* Cambia el color a un tono gris al pasar el mouse */
+}
