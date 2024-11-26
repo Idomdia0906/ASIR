@@ -1,13 +1,13 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
     color: #333;
+    font-size: 16px;
 }
 
-/* Header */
+
 header {
     background-color: #0a3d62;
     color: white;
@@ -23,7 +23,7 @@ header nav {
 }
 
 header .logo {
-    height: 50px;
+    height: 100px;
 }
 
 header ul {
@@ -38,9 +38,10 @@ header ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    padding: 10px;
 }
 
-/* Sección de Modelos */
+
 #modelos {
     padding: 40px 20px;
     background-color: #dff9fb;
@@ -51,6 +52,7 @@ header ul li a {
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap; /* Flex pero posible reemplazo */
 }
 
 .card {
@@ -64,7 +66,7 @@ header ul li a {
 
 .card img {
     width: 100%;
-    height: auto;
+    height: auto; /* Intentar ajustar con resposibidad posible reemplazo */
 }
 
 .card h3 {
@@ -75,16 +77,20 @@ header ul li a {
 .card p {
     padding: 0 10px;
     color: #555;
+    font-size: 14px;
 }
 
-/* Sección de Video */
 #videos {
     padding: 40px 20px;
     text-align: center;
     background-color: #f1f2f6;
 }
 
-/* Sección de Audio */
+video {
+    max-width: 100%;
+    height: auto; /* Intentar ajustar con resposibidad posible reemplazo */
+}
+
 #audio {
     padding: 40px 20px;
     text-align: center;
@@ -92,15 +98,13 @@ header ul li a {
 }
 
 audio {
-    width: 300px;
+    width: 100%; 
 }
 
-/* Footer */
 footer {
-    background-color: #0a3d62;
-    color: white;
     text-align: center;
     padding: 20px;
+    background-image: linear-gradient(#dcdde1 10%, grey);
 }
 
 footer .social-icons img {
@@ -110,15 +114,61 @@ footer .social-icons img {
 
 footer address {
     font-style: normal;
+    color: black;
     margin-top: 10px;
 }
+
 footer address a {
-    color: white; /* Cambia el color del enlace a blanco */
-    text-decoration: none; /* Quita el subrayado */
+    color: white;
+    text-decoration: none;
     font-weight: bold;
 }
 
 footer address a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor */
-    color: #cccccc; /* Cambia el color a un tono gris al pasar el mouse */
+    text-decoration: underline;
+    color: #cccccc;
+}
+
+/* Responsividad (developer.mozilla.org)*/
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #modelos .grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    video {
+        width: 100%; 
+    }
+
+    audio {
+        width: 100%; 
+    }
+}
+
+/* Responsividad (developer.mozilla.org)*/
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px; 
+    }
+
+    header ul li a {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 14px; /
+    }
+
+    footer {
+        font-size: 12px;
+    }
 }
